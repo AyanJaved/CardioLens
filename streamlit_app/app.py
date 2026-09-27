@@ -1,11 +1,18 @@
 import base64
 import io
+import os
 
 import requests
 import streamlit as st
 from PIL import Image
 
-API_URL = "http://localhost:8000/predict"
+API_BASE = os.environ.get("CARDIOLENS_API_URL")
+if not API_BASE:
+    try:
+        API_BASE = st.secrets["CARDIOLENS_API_URL"]
+    except Exception:
+        API_BASE = "http://localhost:8000"
+API_URL = API_BASE + "/predict"
 
 st.set_page_config(page_title="CardioLens", page_icon="🫀")
 st.title("CardioLens")
