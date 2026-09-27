@@ -1,0 +1,23 @@
+# raw dataset — several GB, never commit
+data/raw/
+data/processed/
+
+# processed CSVs are small and fine to keep, but exclude if you'd rather regenerate them
+# data/processed/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# env / secrets
+.env
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+
+# leftover partial downloads
+*.part

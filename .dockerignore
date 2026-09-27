@@ -1,0 +1,12 @@
+data/raw
+data/processed
+notebooks
+streamlit_app
+tests
+assets
+__pycache__
+*.pyc
+.git
+.env
+.gitignore
+README.md

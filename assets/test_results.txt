@@ -1,0 +1,9 @@
+auroc: 0.8344
+auprc: 0.7977
+threshold: 0.6780
+accuracy: 0.7826
+sensitivity: 0.8207
+specificity: 0.7446
+precision: 0.7626
+npv: 0.8059
+f1: 0.7906
